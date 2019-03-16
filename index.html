@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Risk App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="App for APS112 Team 141">
+  <meta name="author" content="Akshay Seshadri">
+
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <div id="header" class="d-flex flex-row">
+    <div id="options-icon" class="header-btn">
+      <!-- <img src="logo.jpg" alt="logo" width="70px"> -->
+      <span class="glyphicon glyphicon-th-list"></span>
+    </div>
+    <div id="home" class="header-btn">
+      Home
+    </div>
+    <div id="account" class="header-btn">
+      Account
+    </div>
+    <div id="support" class="header-btn">
+      Support
+    </div>
+    <div id="contact-us" class="header-btn">
+      Contact Us
+    </div>
+  </div>
+
+
+  <!-- Case 1 - Login Screen -->
+  <div id="case1" class="case" style="display: block;">
+    <div id="body1" class="d-flex flex-column">
+      <div id="login-text">
+        Login to your Account
+      </div>
+        <input type="text" name="user" placeholder="Username" id="user-field" class="text-field1" required />
+        <input type="text" name="pass" placeholder="Password" id="pass-field" class="text-field1" required />
+      <div id="remember-text">
+        <input type="checkbox" name="remember" />
+        Remember Me
+      </div>
+      <div id="login-btn-field">
+        <a href="javascript:void(0);" id="login-btn">
+          LOGIN
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- End Case 1 -->
+
+
+  <!-- Case 2 - Company Information -->
+  <div id="case2" class="case">
+    <div id="body2" class="d-flex flex-column">
+
+      <div id="case2-fields" class="d-flex flex-row">
+
+        <div id="case2-1" class="d-flex flex-column">
+          <div style="margin: 3px 0px 0px 0px;">
+            Today
+          </div>
+          <div style="margin: 77px 0px 0px 0px; font-weight: 700;">
+            Company Information
+          </div>
+          <div style="margin: 20px 0px 0px 0px;">
+            Company
+          </div>
+          <div style="margin: 35px 0px 0px 0px;">
+            Plant Location
+          </div>
+          <div style="margin: 35px 0px 0px 0px;">
+            Plant Product
+          </div>
+        </div>
+
+        <div id="case2-2" class="d-flex flex-column">
+          <div style="">
+            <input type="text" name="today" style="width: 130px" class="text-field2b" value="04/13/2018" disabled/>
+          </div>
+          <div style="margin: 110px 0px 0px 0px;">
+            <input type="text" name="company" style="width: 300px" class="text-field2" value="University of Toronto" disabled/>
+          </div>
+          <div style="margin: 28px 0px 0px 0px;">
+            <input type="text" name="location" style="width: 300px" class="text-field2" value="5 King's College Road, Toronto ON" disabled/>
+          </div>
+          <div style="margin: 28px 0px 0px 0px;">
+            <input type="text" name="product" style="width: 300px" class="text-field2" value="Educational Machinery" disabled/>
+          </div>
+        </div>
+
+        <div id="case2-3" class="d-flex flex-column">
+          <div style="margin: 3px 0px 0px 0px;">
+            Last Update
+          </div>
+          <div style="margin: 77px 0px 0px 0px; font-weight: 700;">
+            Contact Information
+          </div>
+          <div style="margin: 20px 0px 0px 0px;">
+            Name
+          </div>
+          <div style="margin: 16px 0px 0px 0px;">
+            Phone
+          </div>
+          <div style="margin: 16px 0px 0px 0px;">
+            Fax
+          </div>
+          <div style="margin: 16px 0px 0px 0px;">
+            Email
+          </div>
+
+
+        </div>
+
+        <div id="case2-4" class="d-flex flex-column">
+          <div style="">
+            <input type="text" name="update" style="width: 130px" class="text-field2b" value="04/13/2018" disabled/>
+          </div>
+          <div style="margin: 110px 0px 0px 0px;">
+            <input type="text" name="contact" style="width: 300px" class="text-field2" value="Peter Parker" disabled/>
+          </div>
+          <div style="margin: 8px 0px 0px 0px;">
+            <input type="text" name="phone1" style="width: 38px" class="text-field2" value="416" disabled/>
+            <input type="text" name="phone2" style="width: 38px; margin-left: 20px" class="text-field2" value="123" disabled/>
+            <input type="text" name="phone3" style="width: 46px; margin-left: 20px" class="text-field2" value="4567" disabled/>
+          </div>
+          <div style="margin: 8px 0px 0px 0px;">
+            <input type="text" name="fax1" style="width: 38px" class="text-field2" value="416" disabled/>
+            <input type="text" name="fax2" style="width: 38px; margin-left: 20px" class="text-field2" value="123" disabled/>
+            <input type="text" name="fax3" style="width: 46px; margin-left: 20px" class="text-field2" value="4567" disabled/>
+          </div>
+          <div style="margin: 8px 0px 0px 0px;">
+            <input type="text" name="email" style="width: 300px" class="text-field2" value="peter.parker@gmail.com" disabled/>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="case2-buttons" class="d-flex flex-column">
+
+        <div id="case2-top" class="d-flex flex-row" style="margin: 60px 0px 0px 70px">
+          <div>
+            <a href="javascript:void(0);" id="btn1c2" class="big-btn">Equipment and ID</a>
+          </div>
+          <div style="margin: 0px 0px 0px 226px">
+            <a href="javascript:void(0);" id="btn2c2" class="big-btn">Add Record</a>
+          </div>
+
+        </div>
+
+        <div id="case2-bottom" class="d-flex flex-row" style="margin: 50px 0px 0px 70px">
+          <div>
+            <a href="javascript:void(0);" id="btn3c2" class="big-btn">Edit</a>
+          </div>
+          <div style="margin: 0px 0px 0px 226px">
+            <a href="javascript:void(0);" id="btn4c2" class="big-btn">Delete Record</a>
+          </div>
+          <div style="margin: 0px 0px 0px 423px">
+            <a href="javascript:void(0);" id="btn5c2" class="big-btn">Results</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <!-- End Case 2 -->
+
+
+  <!-- Case 3 - Property IDs -->
+  <div id="case3" class="case">
+    <div id="body3" class="d-flex flex-column">
+
+      <div id="case3-fields" class="d-flex flex-row">
+
+        <div id="case3-1" class="d-flex flex-column">
+          <div style="margin: 0px 0px 0px 0px; font-size: 18pt; font-weight: 700;">
+            Manage Property ID
+          </div>
+          <div style="margin: 30px 0px 0px 0px;">
+            ID Number
+          </div>
+          <div style="margin: 35px 0px 0px 0px;">
+            Equipment Number
+          </div>
+          <div style="margin: 35px 0px 0px 0px;">
+            Decription
+          </div>
+          <div style="margin: 35px 0px 0px 0px;">
+            Location
+          </div>
+          <div style="margin: 35px 0px 0px 0px;">
+            Equipment Type
+          </div>
+        </div>
+
+        <div id="case3-2" class="d-flex flex-column">
+          <div style="margin: 59px 0px 0px 0px;">
+            <select class="text-field3" style="width: 300px">
+              <option value="id1">000410</option>
+              <option value="id2">000425</option>
+            </select>
+          </div>
+          <div style="margin: 28px 0px 0px 0px;">
+            <input type="text" name="eqnum" style="width: 300px" class="text-field3" value="9928123" disabled/>
+          </div>
+          <div style="margin: 28px 0px 0px 0px;">
+            <input type="text" name="desc" style="width: 300px" class="text-field3" value="Hand Drill" disabled/>
+          </div>
+          <div style="margin: 28px 0px 0px 0px;">
+            <input type="text" name="eqlocation" style="width: 300px" class="text-field3" value="5 King's College Road, Toronto ON" disabled/>
+          </div>
+          <div style="margin: 28px 0px 0px 0px;">
+            <select disabled class="text-field3" style="width: 300px">
+              <option value="eq1">Drills</option>
+              <option value="eq2">Rotary</option>
+              <option value="eq3">Saws</option>
+            </select>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="case3-buttons" class="d-flex flex-column">
+
+        <div id="case3-top" class="d-flex flex-row" style="margin: 60px 0px 0px 70px">
+          <div>
+            <a href="javascript:void(0);" id="btn1c3" class="big-btn2">New ID</a>
+          </div>
+          <div style="margin: 0px 0px 0px 226px">
+            <a href="javascript:void(0);" id="btn2c3" class="big-btn2">Edit ID</a>
+          </div>
+          <div style="margin: 0px 0px 0px 226px">
+            <a href="javascript:void(0);" id="btn3c3" class="big-btn2">Delete ID</a>
+          </div>
+
+        </div>
+
+        <div id="case3-bottom" class="d-flex flex-row" style="margin: 50px 0px 0px 70px">
+          <div style="margin: 0px 0px 0px 1088px">
+            <a href="javascript:void(0);" id="btn4c3" class="big-btn2">OK</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <!-- End Case 3 -->
+
+
+  <!-- Case 4 - Product Info -->
+  <div id="case4" class="case">
+    <div id="body4" class="d-flex flex-column">
+      <div style="margin: 30px 0px 0px 45px; font-size: 18pt; font-weight: 700;">
+        Source of Risk and Product Information
+      </div>
+
+      <div id="case4-fields" class="d-flex flex-row">
+        <div id="case4-1" class="d-flex flex-column">
+          <div style="margin: 0px 0px 0px 0px;">
+            ID Number
+          </div>
+          <div style="margin: 65px 0px 0px 0px;">
+            Description
+          </div>
+          <div style="margin: 65px 0px 0px 0px;">
+            Reliability Risk
+          </div>
+          <div style="margin: 35px 0px 0px 0px;">
+            Safety Risk
+          </div>
+        </div>
+
+        <div id="case4-2" class="d-flex flex-column">
+          <div style="margin: 3px 0px 0px 0px;">
+            <select class="text-field4" style="width: 300px">
+              <option value="id1">000410</option>
+              <option value="id2">000425</option>
+              <option value="id3">000470</option>
+              <option value="id4">000471</option>
+            </select>
+          </div>
+          <div style="margin: 28px 0px 0px 0px;">
+            <textarea rows="4" cols="50" style="width: 300px" class="text-field4">
+            </textarea>
+          </div>
+          <div style="margin: 28px 0px 0px 0px;">
+            <input type="radio" name="reliability" value="yes" style="margin: 0px 5px 0px 0px;"> Yes
+            <input type="radio" name="reliability" value="no" style="margin: 0px 5px 0px 20px;"> No
+          </div>
+          <div style="margin: 28px 0px 0px 0px;">
+            <input type="radio" name="safety" value="yes" style="margin: 0px 5px 0px 0px;"> Yes
+            <input type="radio" name="safety" value="no" style="margin: 0px 5px 0px 20px;"> No
+          </div>
+        </div>
+
+      </div>
+
+      <div style="margin: 40px 0px 0px 45px; font-size: 18pt; font-weight: 700;">
+        Unwanted Conditions
+      </div>
+
+      <div style="margin: 15px 0px 0px 70px;">
+        Choose Unwanted Condition:
+      </div>
+
+      <select class="text-field4" style="width: 471px; margin: 10px 0px 0px 70px;">
+        <option value="uc0"></option>
+        <option value="uc1">Arcing Internally</option>
+        <option value="uc2">Battery Cell Defective</option>
+        <option value="uc3">Battery Voltage Low</option>
+      </select>
+
+      <div id="case4-buttons" class="d-flex flex-column">
+
+        <div id="case4-top" class="d-flex flex-row" style="margin: 30px 0px 0px 100px">
+          <div>
+            <a href="javascript:void(0);" id="btn1c4" class="big-btn2">Add Condition</a>
+          </div>
+          <div style="margin: 0px 0px 0px 106px">
+            <a href="javascript:void(0);" id="btn2c4" class="big-btn2">Delete Condition</a>
+          </div>
+
+        </div>
+
+        <div id="case4-bottom" class="d-flex flex-row" style="margin: 10px 0px 0px 70px">
+          <div style="margin: 0px 0px 0px 780px">
+            <a href="javascript:void(0);" id="btn3c4" class="big-btn2">Next</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <!-- End Case 4 -->
+
+
+  <!-- Case 5 - Risk Eval -->
+  <div id="case5" class="case">
+    <div id="body5" class="d-flex flex-column">
+      <div style="margin: 30px 0px 6px 70px; font-size: 18pt; font-weight: 700;">
+        Risk and Evaluation Control
+      </div>
+
+      <div id="case5-fields" class="d-flex flex-row">
+        <div id="case5-1" class="d-flex flex-column">
+          <div style="margin: 4px 0px 0px 0px;">
+            Cost($)
+          </div>
+          <div style="margin: 29px 0px 0px 0px;">
+            Risk Control Potential
+          </div>
+          <div style="margin: 23px 0px 0px 0px;">
+            Status
+          </div>
+          <div style="margin: 23px 0px 0px 0px;">
+            Resource
+          </div>
+          <div style="margin: 55px 0px 0px 0px;">
+            Corrective Action
+          </div>
+          <div style="margin: 105px 0px 0px 0px;">
+            Comments
+          </div>
+        </div>
+
+        <div id="case5-2" class="d-flex flex-column">
+          <div style="margin: 3px 0px 0px 0px;">
+            <input type="text" name="product" style="width: 370px" class="text-field5" value="" />
+          </div>
+          <div class="d-flex flex-row">
+            <div style="margin: 23px 0px 0px 0px;">
+              <select class="text-field5" style="width: 130px">
+                <option value="ri0"></option>
+                <option value="ri1">H - High</option>
+                <option value="ri2">M - Medium</option>
+                <option value="ri3">L - Low</option>
+              </select>
+            </div>
+            <div style="margin: 26px 0px 0px 40px;">
+              Severity
+            </div>
+            <div style="margin: 23px 0px 0px 20px;">
+              <select class="text-field5" style="width: 130px">
+                <option value="sev0"></option>
+                <option value="sev1">A</option>
+                <option value="sev2">B</option>
+                <option value="sev3">C</option>
+                <option value="sev4">D</option>
+              </select>
+            </div>
+          </div>
+          <div class="d-flex flex-row">
+            <div style="margin: 18px 0px 0px 0px;">
+              <select class="text-field5" style="width: 130px">
+                <option value="stat0"></option>
+                <option value="stat1">Complete</option>
+                <option value="stat2">&gt50% Complete</option>
+                <option value="stat3">&lt50% Complete</option>
+                <option value="stat4">0% Complete</option>
+              </select>
+            </div>
+            <div style="margin: 20px 0px 0px 26px;">
+              Probability
+            </div>
+            <div style="margin: 18px 0px 0px 19px;">
+              <select class="text-field5" style="width: 130px">
+                <option value="pr3"></option>
+		<option value="pr0">J</option>
+                <option value="pr1">K</option>
+                <option value="pr2">L</option>
+                <option value="pr3">M</option>
+                
+            
+              </select>
+            </div>
+          </div>
+          <div style="margin: 18px 0px 0px 0px;">
+            <select class="text-field5" style="width: 130px">
+              <option value="re0"></option>
+              <option value="re1">P</option>
+              <option value="re2">Q</option>
+              <option value="re3">R</option>
+              <option value="re4">S</option>
+            </select>
+          </div>
+          <div style="margin: 28px 0px 0px 0px;">
+            <textarea rows="4" cols="50" style="width: 370px" class="text-field5">
+            </textarea>
+          </div>
+          <div style="margin: 28px 0px 0px 0px;">
+            <textarea rows="4" cols="50" style="width: 370px" class="text-field5">
+            </textarea>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div id="case5-buttons" class="d-flex flex-column">
+        <div id="case5-top" class="d-flex flex-row" style="margin: 30px 0px 0px 100px">
+          <div>
+            <a href="javascript:void(0);" id="btn1c5" class="big-btn">Save</a>
+          </div>
+          <div style="margin: 0px 0px 0px 106px">
+            <a href="javascript:void(0);" id="btn2c5" class="big-btn">Cancel</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- End Case 5 -->
+
+
+  <!-- Case 6 - All Results -->
+  <div id="case6" class="case">
+    <div id="body6" class="d-flex flex-column">
+      <table id="results-table">
+        <tr>
+          <th>ID Number</th>
+          <th>Equipment Type</th>
+          <th>Unwanted Condition</th>
+          <th>Exposure Code</th>
+          <th>Cost</th>
+          <th>Comments</th>
+        </tr>
+        <tr>
+          <td>000410</td>
+          <td>Drills</td>
+          <td>Battery Cell Defective</td>
+          <td>AJP</td>
+          <td>$2300</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td>000425</td>
+          <td>Saws</td>
+          <td>Battery Cell Defective</td>
+          <td>BJP</td>
+          <td>$1000</td>
+          <td>Check up on maintanence after 1 month</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+
+      <div id="case6-fields" class="d-flex flex-row">
+        <div id="case6-1" class="d-flex flex-column">
+          <div style="margin: 10px 0px 0px 0px; font-size: 18pt; font-weight: 700;">
+            Records to Display
+          </div>
+          <div style="margin: 15px 0px 0px 0px;">
+            <input type="text" name="rectodisplay" style="width: 370px" class="text-field6" value="" />
+          </div>
+          <div style="margin: 25px 0px 0px 0px; font-size: 18pt; font-weight: 700;">
+            Most Important Parameter
+          </div>
+          <div style="margin: 10px 0px 0px 0px;">
+            <input type="radio" name="sev" value="sev" style="margin: 0px 5px 0px 0px;"> Severity
+            <input type="radio" name="prob" value="prob" style="margin: 0px 5px 0px 20px;"> Probability
+            <input type="radio" name="res" value="res" style="margin: 0px 5px 0px 20px;"> Resource
+          </div>
+          <div style="margin: 25px 0px 0px 0px; font-size: 18pt; font-weight: 700;">
+            Least Important Parameter
+          </div>
+          <div style="margin: 10px 0px 0px 0px;">
+            <input type="radio" name="sev" value="sev" style="margin: 0px 5px 0px 0px;"> Severity
+            <input type="radio" name="prob" value="prob" style="margin: 0px 5px 0px 20px;"> Probability
+            <input type="radio" name="res" value="res" style="margin: 0px 5px 0px 20px;"> Resource
+          </div>
+        </div>
+
+        <div id="case6-2" class="d-flex flex-column">
+          <div style="margin: 70px 0px 0px 106px;">
+            <a href="javascript:void(0);" id="btn1c6" class="big-btn3">Generate Heat Map</a>
+          </div>
+          <div style="margin: 23px 0px 0px 106px">
+            <a href="javascript:void(0);" id="btn2c6" class="big-btn3">OK</a>
+          </div>
+          <div style="margin: 23px 0px 0px 106px">
+            <a href="javascript:void(0);" id="btn3c6" class="big-btn3">Print</a>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+  <!-- End Case 6 -->
+
+
+</body>
+
+</html>
